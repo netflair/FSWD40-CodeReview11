@@ -195,6 +195,10 @@ i {
         width: 100%;
       }
 
+small {
+    color: rgb(99, 99, 99);
+}
+
 /*TABLE*/
 table {
 	font-family:Arial, Helvetica, sans-serif;

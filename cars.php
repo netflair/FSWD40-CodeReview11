@@ -37,6 +37,7 @@ $statement = $db_con->query('SELECT * FROM cars JOIN locations ON locations.loc_
                <div class="img">
                 <img src=" <?php echo $row['image'] ?> ">
                 <h1><?php echo $row['type'] ?></h1>
+                <small>current location:<br><?php echo $row['address'] ?></small>
                </div>
                <div class="details">
                    <h1><?php echo $row['brand'] . " " . $row['model'] ?></h1>
