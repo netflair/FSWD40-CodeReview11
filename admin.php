@@ -57,7 +57,7 @@ function initialize() {
 
 
     var mapOptions = {
-        zoom: 10,
+        zoom: 12,
         center: new google.maps.LatLng(48.1735831, 16.3520282),
         mapTypeId: google.maps.MapTypeId.MAP
     };
@@ -66,17 +66,61 @@ function initialize() {
 
 
     var icons = {
-    parking: {
-    icon: './img/caricon.png'
-    },
-    info: {
+    office: {
     icon: './img/officeicon.png'
+    },
+    car: {
+    icon: './img/caricon.png'
     }
     };
 
 
     //marker position
-   
+    var features = [
+            {
+                position: new google.maps.LatLng(48.185589, 16.326283),
+                type: 'office'
+            }, {
+                position: new google.maps.LatLng(48.185123, 16.376081),
+                type: 'office'
+            }, {
+                position: new google.maps.LatLng(48.214512, 16.361504),
+                type: 'office'
+            }, {
+                position: new google.maps.LatLng(48.190235, 16.415186),
+                type: 'office'
+            }, {
+                position: new google.maps.LatLng(48.183094, 16.338968),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.189365, 16.263180),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.277412, 16.333185),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.203209, 16.241375),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.144001, 16.267836),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.078812, 16.289885),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.149040, 16.394114),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.188168, 16.354200),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.198902, 16.313602),
+                type: 'car'
+            }, {
+                position: new google.maps.LatLng(48.174503, 16.297552),
+                type: 'car'
+            }
+    ];
 
     //create markers
     features.forEach(function(feature) {
