@@ -16,7 +16,6 @@
         <li class="logout"><a href="inc/scripts/logout.php">LogOut</a></li>
         <?php } ?>
         <div id="login-err"></div>
-        <div id="login-suc"></div>
         </form>
     </ul>
 </nav>
