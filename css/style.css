@@ -28,7 +28,7 @@ header ul li {
     margin-left: 20px;
 }
 
-form .sub-button {
+form .sub-button, form a {
     background: rgb(51, 147, 226);
     padding: 6px 20px;
     text-decoration: none;
@@ -39,7 +39,7 @@ form .sub-button {
     text-align: center;
 }
 
-form .sub-button:hover {
+form .sub-button:hover, form a:hover {
     border: 3px solid rgb(51, 147, 226);
     cursor: pointer;
 }
@@ -54,10 +54,10 @@ form .sub-button:hover {
     margin-left: 40px;
     margin-right: 20px;
 }
-.logout .sub-button {
+.logout a {
     background: rgb(226, 51, 51);
 }
-.logout .sub-button:hover {
+.logout a:hover {
     border: 3px solid rgb(226, 51, 51);
 }
 nav ul span {
