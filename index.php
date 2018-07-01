@@ -21,7 +21,7 @@ if(!empty($_SESSION['user_id'])){
             <span class="err-firstname"></span>
             <input type="text" name="last_name" placeholder="Enter your last name.">
             <span class="err-lastname"></span>
-            <a href="#" id="reg-sub" type="submit" name="reg-sub">Register</a>
+            <input class="sub-button" id="reg-sub" type="submit" name="reg-sub" value="Register">
         </form>
         <div id="reg-err">bad</div>
         <div id="reg-suc">good</div>
