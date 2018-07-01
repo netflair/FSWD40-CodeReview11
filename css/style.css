@@ -90,10 +90,11 @@ input {
 #reg-form {
     display: flex;
     flex-direction: column;
+    width: 400px;
 }
 
 #reg-form input {
-    min-width: 400px;
+    width: auto;
     margin: 10px 0;
 }
 
@@ -123,7 +124,7 @@ input {
 #reg-sub {
     margin-top: 20px !important;
     height: 41px;
-    width: auto;
+    width: 100%;
 }
 
 #reg h1 {
@@ -301,6 +302,10 @@ table tr:last-child td:last-child {
         display: flex;
     }
 
+    #reg h1 {
+        width: 96vw;
+    }
+
 }
 
 @media only screen and (max-width: 400px){
@@ -310,4 +315,11 @@ table tr:last-child td:last-child {
         display: block;
     }
 
+    #reg-form {
+        width: 96vw;
+    }
+
+    #reg h1 {
+        width: 96vw;
+    }
 }
