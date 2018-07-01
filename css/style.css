@@ -114,6 +114,10 @@ input {
     margin-top: -13px;
 }
 
+#reg-sub {
+    margin-top: 20px;
+}
+
 #reg h1 {
     font-weight: bold;
     font-size: 2em;
