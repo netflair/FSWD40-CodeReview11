@@ -11,7 +11,7 @@
         <?php } else { ?>
         <li><input type="text" name="email" placeholder="email"></li>
         <li><input type="password" name="user_pass" placeholder="password"></li>
-        <li><a id="login-sub" type="submit" name="log-sub">Login</a></li><?php } ?>
+        <li><input class="sub-button" id="login-sub" type="submit" name="log-sub" value="Login"></li><?php } ?>
         <?php if(!empty($_SESSION['user_id'])){ ?>
         <li class="logout"><a href="inc/scripts/logout.php">LogOut</a></li>
         <?php } ?>
