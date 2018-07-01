@@ -61,7 +61,7 @@ $(function()
 			$('.err-firstname').html("First name is required");
 		}
 		else if(first_name < 3) {
-			$('.err-firstname').html("First name must contain at least 3 characters.")
+			$('.err-firstname').html("First name must contain at least 3 characters.");
 		}
 		else {
 			$('.err-firstname').html("");
@@ -76,12 +76,14 @@ $(function()
 			$('.err-lastname').html("Last name is required");
 		}
 		else if(last_name < 3) {
-			$('.err-lastname').html("Last name must contain at least 3 characters.")
+			$('.err-lastname').html("Last name must contain at least 3 characters.");
 		}
 		else {
 			$('.err-lastname').html("");
 		}
 	});
+
+	
 
 	//on registration submit
 	$('#reg-sub').click(function(event){
