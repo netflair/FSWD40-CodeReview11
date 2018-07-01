@@ -1,9 +1,11 @@
 <?php
 	include_once('../conf/config.php');
+
     //define vars
 	$error  = array();
 	$response = array();
 	$success = "";
+	$email = $_POST['email'];
 
     //validation
 	if(empty($_POST['first_name'])){
@@ -16,6 +18,15 @@
 
 	if(empty($_POST['email'])){
 		$error[] = "Email is required";	
+	}
+
+	//querry for mail check 
+	$query = $db_con->prepare( 'SELECT user_mail FROM users WHERE user_mail = :email' );
+	$query->bindParam(':email', $email);
+	$query->execute();
+	//check if mail already exists
+	if($query->rowCount() > 0) {
+		$error[] = "Email already in use";
 	}
 
 	if(empty($_POST['pass'])){
