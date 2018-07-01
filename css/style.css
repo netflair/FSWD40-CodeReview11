@@ -84,7 +84,7 @@ input {
     align-items: center;
     background: url('https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.shortday.in%2Fwp-content%2Fuploads%2F2015%2F05%2FCar-hd-wallpapers.jpg&f=1');
     background-size: cover;
-    height: 93vh;
+    height: calc(100vh - 70px);
 }
 
 #reg-form {
