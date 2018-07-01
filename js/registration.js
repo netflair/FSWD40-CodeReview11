@@ -99,6 +99,8 @@ $(function()
 			{
 				$("#reg-suc").html(response['msg']);
 				$("#reg-suc").show();
+				$("#reg-form")[0].reset();
+				$("#reg-err").hide();
 			}
 			else
 			{
