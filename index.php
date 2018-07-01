@@ -12,10 +12,15 @@ if(!empty($_SESSION['user_id'])){
         <h1>Register to get access to our fine selection of cars.</h1>
         <form id="reg-form" method="post">
             <input type="text" name="email" placeholder="Enter your E-Mail">
+            <span class="err-mail"></span>
             <input type="password" name="pass" placeholder="Enter your password.">
+            <span class="err-pass"></span>
             <input type="password" name="repass" placeholder="Confirm your password.">
+            <span class="err-repass"></span>
             <input type="text" name="first_name" placeholder="Enter your first name.">
+            <span class="err-firstname"></span>
             <input type="text" name="last_name" placeholder="Enter your last name.">
+            <span class="err-lastname"></span>
             <a href="#" id="reg-sub" type="submit" name="reg-sub">Register</a>
         </form>
         <div id="reg-err">bad</div>
