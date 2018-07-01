@@ -110,6 +110,9 @@ input {
     font-weight: bold;
  }
 
+#reg-form span {
+    margin-top: -13px;
+}
 
 #reg h1 {
     font-weight: bold;
