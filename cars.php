@@ -22,7 +22,7 @@ $statement = $db_con->query('SELECT * FROM cars JOIN locations ON locations.loc_
                     <?php } ?>
         </select>
     </form>
-<div id="show"></div>
+
 
 
     <section id="cars">
