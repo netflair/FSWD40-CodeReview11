@@ -2,7 +2,7 @@ $(function()
 {
 	//client side validation
 	//E-Mail
-	 $('input[name="email"]').keyup(function(){
+	 $('#reg-form input[name="email"]').keyup(function(){
 
 		function isValidEmailAddress(email) {
 		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,20})?$/;
@@ -83,7 +83,7 @@ $(function()
 		}
 	});
 
-	
+
 
 	//on registration submit
 	$('#reg-sub').click(function(event){
